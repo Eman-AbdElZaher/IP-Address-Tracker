@@ -32,36 +32,36 @@
               id="ipInput"
               placeholder="Search for any IP address or domain"
             />
-            <button type="submit" id="submit">
-              <img src="images/icon-arrow.svg" />
+            <button type="submit" id="submit" aria-label="Search">
+              <img src="images/icon-arrow.svg" alt="arrow-icon"/>
             </button>
           </form>
         </div>
       </header>
       <section class="result-data">
         <div class="data-holder">
-          <h3 class="data-title">IP Address</h3>
+          <h2 class="data-title">IP Address</h3>
           <p id="ip-address"></p>
         </div>
         <hr />
         <div class="data-holder">
-          <h3 class="data-title">Location</h3>
+          <h2 class="data-title">Location</h3>
           <p id="loc"></p>
         </div>
         <hr />
         <div class="data-holder">
-          <h3 class="data-title">Timezone</h3>
+          <h2 class="data-title">Timezone</h3>
           <p id="Timezone"></p>
         </div>
         <hr />
         <div class="data-holder">
-          <h3 class="data-title">ISP</h3>
+          <h2 class="data-title">ISP</h3>
           <p id="isp"></p>
         </div>
       </section>
-      <section class="map-sec">
+      <div class="map-sec">
         <div id="map"></div>
-      </section>
+      </div>
       <!-- add offset value dynamically using the API -->
       <div class="alert">
         <span

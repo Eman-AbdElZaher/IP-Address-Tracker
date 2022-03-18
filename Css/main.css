@@ -98,7 +98,7 @@ form {
   line-height: 1.6rem;
   box-shadow: 0px 2px 20px 0px #00000038;
 }
-.result-data h3 {
+.result-data h2 {
   color: var(--dark-gray);
   font-size: 0.8rem;
   text-transform: uppercase;
