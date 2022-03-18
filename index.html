@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | IP Address Tracker</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="Css/main.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="top-sec">
+        <h1>IP Address Tracker</h1>
+        <div class="ip-search">
+          <form action="get">
+            <input
+              type="text"
+              id="ipInput"
+              placeholder="Search for any IP address or domain"
+            />
+            <button type="submit" id="submit">
+              <img src="images/icon-arrow.svg" />
+            </button>
+          </form>
+        </div>
+      </header>
+      <section class="result-data">
+        <div class="data-holder">
+          <h3 class="data-title">IP Address</h3>
+          <p id="ip-address"></p>
+        </div>
+        <hr />
+        <div class="data-holder">
+          <h3 class="data-title">Location</h3>
+          <p id="loc"></p>
+        </div>
+        <hr />
+        <div class="data-holder">
+          <h3 class="data-title">Timezone</h3>
+          <p id="Timezone"></p>
+        </div>
+        <hr />
+        <div class="data-holder">
+          <h3 class="data-title">ISP</h3>
+          <p id="isp"></p>
+        </div>
+      </section>
+      <section class="map-sec">
+        <div id="map"></div>
+      </section>
+      <!-- add offset value dynamically using the API -->
+      <div class="alert">
+        <span
+          class="closebtn"
+          onclick="this.parentElement.style.display='none';"
+          >&times;</span
+        >
+        Error!Invalid Ip Address:)
+      </div>
+    </main>
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <script src="Js/main.js"></script>
+  </body>
+</html>
